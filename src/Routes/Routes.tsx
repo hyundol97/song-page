@@ -1,7 +1,7 @@
 /**
- * @file router
- * @author 김민성
- * @description 라우트 정의, 레이지 로딩으로 코드 스플리팅
+ * @file 라우터
+ * @author h.s.Song
+ * @description 라우트 경로 정의 (루트)파일
  */
 
 import { Route, Routes } from '../Types/Routes';
