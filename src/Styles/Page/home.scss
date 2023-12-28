@@ -1,6 +1,60 @@
+.home-wrapper {
+  margin: 2vw 0 2vw 0;
+}
+
 .home-main {
-  display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: auto;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+
+  > * {
+    flex: 1; // 자식 요소들을 동일한 크기로 설정
+  }
+
+  Lottie {
+    width: 100%; // Lottie를 가득 채우도록 설정
+  }
+
+  div {
+    display: block;
+    font-size: 2em;
+    line-height: 1.4;
+    .intro-main {
+      font-size: 2em;
+      font-weight: 400;
+      color: #6da2e3;
+      margin-bottom: 30px;
+    }
+    .intro-blue {
+      color: #6ea5e8;
+    }
+    .intro-black {
+      color: #5b686c;
+    }
+  }
+  p {
+    margin: 0 auto; // 브라우저 원인으로 margin 값 발생하여 별도 처리
+  }
+}
+
+.home-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    display: block;
+    font-size: 1.6em;
+    line-height: 1.4;
+    margin-top: 30px;
+  }
+  .intro-black {
+    color: #5b686c;
+  }
+  p {
+    margin: 10px 0 0 0;
+  }
 }
