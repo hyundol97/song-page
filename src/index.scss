@@ -1,11 +1,17 @@
 @use './Styles/index.scss';
 
 body {
-  margin: 10;
+  margin: 1vw 10vw 0 10vw;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 5px 10px 0 10px;
+  }
 }
 
 code {

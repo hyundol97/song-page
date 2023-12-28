@@ -1,17 +1,3 @@
-.header {
-  display: flex;
-  justify-content: flex-end;
-  gap: 16px;
-  span {
-    font-size: 20px;
-    font-weight: 400;
-  }
-}
+@use './layout.scss';
 
-.footer {
-  display: flex;
-  span {
-    font-size: 16px;
-    font-weight: 300;
-  }
-}
+@use './Page/home.scss';

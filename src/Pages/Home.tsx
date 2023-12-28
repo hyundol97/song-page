@@ -8,13 +8,13 @@ import lottieJson from '../Assets/animation.json';
 
 const Home = () => {
   return (
-    <Lottie
-      className="item-center justify-center flex-auto w-10"
-      loop
-      animationData={lottieJson}
-      play
-      style={{ width: 1000, height: 1000, alignItems: 'center' }}
-    />
+    <>
+      <div className="home-main">
+        <Lottie loop animationData={lottieJson} play style={{ width: '50%', height: '50%' }} />
+        <div>ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</div>
+      </div>
+      <div>ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</div>
+    </>
   );
 };
 

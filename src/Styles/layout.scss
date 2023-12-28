@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  span {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    gap: 5px;
+    span {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  span {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    span {
+      font-size: 10px;
+      font-weight: 400;
+    }
+  }
+}
