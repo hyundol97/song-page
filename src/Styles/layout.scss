@@ -18,16 +18,26 @@
   }
 }
 
-.footer {
-  display: flex;
+.footer-wrapper {
+  background-color: #deeefb;
+  text-align: right;
+  padding: 10px;
+
+  .copyrights {
+    font-weight: 400;
+    margin-top: 15px;
+  }
+
   span {
+    display: block;
     font-size: 1.1em;
     font-weight: 300;
+    line-height: 1.5;
   }
 }
 
 @media (max-width: 768px) {
-  .footer {
+  .footer-wrapper {
     span {
       font-size: 1em;
       font-weight: 400;
