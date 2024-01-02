@@ -11,10 +11,16 @@ const Footer = () => {
         Contact: <a href="mailto:gusqhdo00@gmail.com">gusqhdo00@gmail.com</a>
       </span>
       <span>
-        GitHub: <a href="https://github.com/hyundol97/reach-rich">https://github.com/hyundol97/reach-rich</a>
+        GitHub:{' '}
+        <a href="https://github.com/hyundol97/reach-rich" target="_blank">
+          https://github.com/hyundol97/reach-rich
+        </a>
       </span>
       <span>
-        Instagram: <a href="https://www.instagram.com/hyundol_97">https://www.instagram.com/hyundol_97</a>
+        Instagram:{' '}
+        <a href="https://www.instagram.com/hyundol_97" target="_blank">
+          https://www.instagram.com/hyundol_97
+        </a>
       </span>
       <span className="copyrights">Copyright 2024. hyundol97 All pictures cannot be copied without permission.</span>
     </div>

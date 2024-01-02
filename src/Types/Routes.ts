@@ -8,5 +8,7 @@ export interface Route {
 
 export interface Routes {
   HOME: Route;
-  LOGIN: Route;
+  INTRO: Route;
+  CAREER: Route;
+  ETC: Route;
 }

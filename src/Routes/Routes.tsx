@@ -6,7 +6,9 @@
 
 import { Route, Routes } from '../Types/Routes';
 import Home from '../Pages/Home';
-import Login from '../Pages/Login';
+import Intro from '../Pages/Intro';
+import Career from '../Pages/Career';
+import Etc from '../Pages/Etc';
 
 export const ROUTES: Routes = {
   // 230627 김민성
@@ -15,10 +17,20 @@ export const ROUTES: Routes = {
     link: '/',
     element: <Home />,
   },
-  LOGIN: {
-    path: '/login',
-    link: '/login',
-    element: <Login />,
+  INTRO: {
+    path: '/intro',
+    link: '/intro',
+    element: <Intro />,
+  },
+  CAREER: {
+    path: '/career',
+    link: '/career',
+    element: <Career />,
+  },
+  ETC: {
+    path: '/etc',
+    link: '/etc',
+    element: <Etc />,
   },
 };
 
