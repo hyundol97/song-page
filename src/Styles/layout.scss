@@ -1,7 +1,15 @@
 .header {
   display: flex;
-  justify-content: flex-end;
-  gap: 16px;
+  justify-content: space-between;
+
+  .menu {
+    display: flex;
+    gap: 16px;
+  }
+
+  .logo {
+    display: flex;
+  }
 
   span {
     font-size: 1.2em;
@@ -11,7 +19,9 @@
 
 @media (max-width: 768px) {
   .header {
-    gap: 5px;
+    .menu {
+      gap: 5px;
+    }
     span {
       font-size: 1em;
       font-weight: 400;

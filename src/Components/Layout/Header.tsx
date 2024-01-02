@@ -4,30 +4,36 @@
  * @description 각 페이지의 헤더 (메뉴) 부분을 출력하는 컴포넌트
  */
 
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ROUTES } from '../../Routes/Routes';
 import '../../Styles/index.scss';
+import homeLogo from '../../Assets/home_logo.png';
 
 const Header = () => {
   return (
     <div className="header">
-      <Router>
+      <div className="logo">
+        <>
+          <img src={homeLogo} alt="main" width="200px" />
+        </>
+      </div>
+      <div className="menu">
         <span>
-          <Link to={ROUTES.INTRO.path} key={ROUTES.INTRO.path} className="no-decoration">
+          <Link to={ROUTES.INTRO.path} className="no-decoration">
             INTRO
           </Link>
         </span>
         <span>
-          <Link to={ROUTES.CAREER.path} key={ROUTES.CAREER.path} className="no-decoration">
+          <Link to={ROUTES.CAREER.path} className="no-decoration">
             CAREER
           </Link>
         </span>
         <span>
-          <Link to={ROUTES.ETC.path} key={ROUTES.ETC.path} className="no-decoration">
+          <Link to={ROUTES.ETC.path} className="no-decoration">
             ETC
           </Link>
         </span>
-      </Router>
+      </div>
     </div>
   );
 };
