@@ -3,12 +3,14 @@
   justify-content: space-between;
 
   .menu {
+    align-items: center;
     display: flex;
     gap: 16px;
   }
 
   .logo {
     display: flex;
+    cursor: pointer;
   }
 
   span {
@@ -37,6 +39,12 @@
   .copyrights {
     font-weight: 400;
     margin-top: 15px;
+  }
+
+  .version {
+    font-weight: 400;
+    margin-top: 5px;
+    font-size: 0.9em;
   }
 
   span {

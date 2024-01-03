@@ -4,18 +4,21 @@
  * @description 각 페이지의 헤더 (메뉴) 부분을 출력하는 컴포넌트
  */
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ROUTES } from '../../Routes/Routes';
-import '../../Styles/index.scss';
 import homeLogo from '../../Assets/home_logo.png';
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const onClick = () => {
+    navigate('/');
+  };
+
   return (
     <div className="header">
       <div className="logo">
-        <>
-          <img src={homeLogo} alt="main" width="200px" />
-        </>
+        <img src={homeLogo} alt="main" width="160px" onClick={onClick} />
       </div>
       <div className="menu">
         <span>

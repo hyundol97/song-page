@@ -1,0 +1,48 @@
+.intro-wrapper {
+  margin: 2vw 0 2vw 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  > * {
+    flex: 0.4;
+  }
+}
+
+.intro-main {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+
+  div {
+    display: block;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  p {
+    margin: 0 auto; // 브라우저 원인으로 margin 값 발생하여 별도 처리
+  }
+}
+
+.intro-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+
+  div {
+    display: block;
+    font-size: 1.4em;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  .intro-black {
+    color: #5b686c;
+  }
+  p {
+    margin: 10px 0 0 0;
+  }
+}
