@@ -14,8 +14,8 @@ const Footer = () => {
       </span>
       <span>
         GitHub:{' '}
-        <a href="https://github.com/hyundol97/reach-rich" target="_blank">
-          https://github.com/hyundol97/reach-rich
+        <a href="https://github.com/hyundol97/song-page" target="_blank">
+          https://github.com/hyundol97/song-page
         </a>
       </span>
       <span>
