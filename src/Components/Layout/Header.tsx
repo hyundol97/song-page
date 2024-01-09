@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo">
-        <img src={homeLogo} alt="main" width="160px" onClick={onClick} />
+        <img src={homeLogo} alt="main" width="140px" onClick={onClick} />
       </div>
       <div className="menu">
         <span>
