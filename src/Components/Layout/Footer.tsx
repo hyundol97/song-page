@@ -5,25 +5,37 @@
  */
 
 import packageJson from '../../../package.json';
+import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import ArticleIcon from '@mui/icons-material/Article';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Footer = () => {
+  const sxObject = {
+    fontSize: {
+      xs: '25px',
+      md: '75px',
+      lg: '100px',
+    },
+  };
+
   return (
     <div className="footer-wrapper">
-      <span>
-        Contact: <a href="mailto:gusqhdo00@gmail.com">gusqhdo00@gmail.com</a>
-      </span>
-      <span>
-        GitHub:{' '}
+      <div className="footer-icons">
+        <a href="mailto:gusqhdo00@gmail.com">
+          <EmailIcon sx={sxObject} />
+        </a>
         <a href="https://github.com/hyundol97/song-page" target="_blank">
-          https://github.com/hyundol97/song-page
+          <GitHubIcon sx={sxObject} />
         </a>
-      </span>
-      <span>
-        Instagram:{' '}
+        <a href="https://hyundolog.tistory.com" target="_blank">
+          <ArticleIcon sx={sxObject} />
+        </a>
         <a href="https://www.instagram.com/hyundol_97" target="_blank">
-          https://www.instagram.com/hyundol_97
+          <InstagramIcon sx={sxObject} />
         </a>
-      </span>
+      </div>
+
       <span className="copyrights">Copyright 2024. hyundol97 All pictures cannot be copied without permission.</span>
       <span className="version">Version {packageJson.version}</span>
     </div>
