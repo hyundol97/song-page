@@ -7,6 +7,7 @@ import Lottie from 'react-lottie-player';
 import doMyBestJson from '../Assets/doMyBest.json';
 import everyExperienceJson from '../Assets/everyExperience.json';
 import richIsJson from '../Assets/richIs.json';
+import TyppingEffectText from '../Components/Common/TyppingEffectText';
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
         <div>
           <p className="intro-main">Do My Best!</p>
           <p className="intro-black">안녕하세요 🖐️</p>
-          <p className="intro-blue">최고보다 최선을 다하는 사람이 되고싶은</p>
+          <TyppingEffectText text="최고보다 최선을 다하는 사람이 되고싶은" />
           <p className="intro-black">프론트엔드 개발자 송현석 입니다.</p>
         </div>
       </div>
@@ -25,9 +26,9 @@ const Home = () => {
         <div>
           <p className="intro-main">Every Experience</p>
           <p className="intro-black">새로운 기술 및 환경을 경험하는 것, 그리고 새로운 사람을 만나는 것은</p>
-          <p className="intro-blue">또 다른 나를 발견할 수 있는 기회라고 생각합니다.</p>
+          <TyppingEffectText text="또 다른 나를 발견할 수 있는 기회라고 생각합니다." />
           <p className="intro-black">확신할 수 있는 길을 찾을 수 있도록</p>
-          <p className="intro-blue">찾아온 모든 기회를 쟁취하려 노력하는 편입니다.</p>
+          <TyppingEffectText text="찾아온 모든 기회를 쟁취하려 노력하는 편입니다." />
         </div>
       </div>
       <div className="home-sub">
