@@ -3,7 +3,7 @@
  * @author h.s.Song
  */
 
-import identify from '../Assets/identify.jpg';
+import identify from 'Assets/identify.jpg';
 
 const Intro = () => {
   return (

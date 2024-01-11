@@ -4,10 +4,10 @@
  */
 
 import Lottie from 'react-lottie-player';
-import doMyBestJson from '../Assets/doMyBest.json';
-import everyExperienceJson from '../Assets/everyExperience.json';
-import richIsJson from '../Assets/richIs.json';
-import TyppingEffectText from '../Components/Common/TyppingEffectText';
+import doMyBestJson from 'Assets/doMyBest.json';
+import everyExperienceJson from 'Assets/everyExperience.json';
+import richIsJson from 'Assets/richIs.json';
+import TyppingEffectText from 'Components/Common/TyppingEffectText';
 
 const Home = () => {
   return (

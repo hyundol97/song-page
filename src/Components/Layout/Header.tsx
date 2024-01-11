@@ -5,8 +5,8 @@
  */
 
 import { Link, useNavigate } from 'react-router-dom';
-import { ROUTES } from '../../Routes/Routes';
-import homeLogo from '../../Assets/home_logo.png';
+import { ROUTES } from 'Routes/Routes';
+import homeLogo from 'Assets/home_logo.png';
 
 const Header = () => {
   const navigate = useNavigate();
