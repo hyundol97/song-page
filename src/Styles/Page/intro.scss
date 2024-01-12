@@ -5,7 +5,7 @@
   flex-direction: row;
 
   > * {
-    flex: 0.4;
+    flex: 0.33;
   }
 }
 
@@ -24,6 +24,11 @@
   p {
     margin: 0 auto; // 브라우저 원인으로 margin 값 발생하여 별도 처리
   }
+
+  .MuiAvatar-root {
+    display: grid;
+    text-align: center;
+  }
 }
 
 .intro-sub {
@@ -39,10 +44,11 @@
     font-size: 1.1em;
     line-height: 1.6;
   }
-  .intro-black {
-    color: #5b686c;
-  }
   p {
     margin: 10px 0 0 0;
+  }
+
+  .intro-black {
+    color: #5b686c;
   }
 }
