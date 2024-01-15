@@ -3,7 +3,6 @@
  * @author h.s.Song
  */
 
-import { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -18,12 +17,6 @@ import SchoolIcon from '@mui/icons-material/School';
 import identify from 'Assets/identify.jpg';
 
 const Intro = () => {
-  const [open, setOpen] = useState(true);
-
-  const handleClick = () => {
-    setOpen(!open);
-  };
-
   return (
     <div className="intro-wrapper">
       <div className="intro-main">
@@ -79,6 +72,14 @@ const Intro = () => {
             </ListItemAvatar>
             <ListItemText primary="대학교" secondary="세종대학교 (소프트웨어, 소셜미디어매니지먼트소프트웨어 전공)" />
           </ListItem>
+
+          <div className="summary">
+            <h2>새로운 길에 대한 도전</h2>
+            <p>
+              &nbsp; 경기도 의정부시에서 태어나 자랐으며, 문과에서 교차지원을 통해 대학에 입학하였습니다. 대학에서
+              소프트웨어학, 연계전공으로 소셜미디어매니지먼트소프트웨어를 전공하여 학사 학위를 취득하였습니다. 🎓
+            </p>
+          </div>
         </List>
       </div>
     </div>
