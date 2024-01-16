@@ -12,8 +12,18 @@ jobs:
       - name: git clone
         uses: actions/checkout@v2
 
-      - name: npm install
-        run: npm install
+      - name: Cache Node.js modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/*.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
 
       - name: npm build
         run: npm run build
