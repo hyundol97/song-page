@@ -25,7 +25,7 @@ const TyppingEffectText = (props: TyppingEffectTextType) => {
       } else {
         clearInterval(typingIntervalId);
       }
-    }, 200);
+    }, 100);
 
     // 10초마다 초기화 및 타이핑 효과 재시작
     const resetIntervalId = setInterval(() => {
@@ -42,7 +42,7 @@ const TyppingEffectText = (props: TyppingEffectTextType) => {
           } else {
             clearInterval(newTypingIntervalId);
           }
-        }, 200);
+        }, 100);
       }, 0);
     }, 10000);
 
