@@ -25,13 +25,13 @@ const Footer = () => {
         <a href="mailto:gusqhdo00@gmail.com">
           <EmailIcon sx={sxObject} />
         </a>
-        <a href="https://github.com/hyundol97/song-page" target="_blank">
+        <a href="https://github.com/hyundol97/song-page" target="_blank" rel="noopener noreferrer">
           <GitHubIcon sx={sxObject} />
         </a>
-        <a href="https://hyundolog.tistory.com" target="_blank">
+        <a href="https://hyundolog.tistory.com" target="_blank" rel="noopener noreferrer">
           <ArticleIcon sx={sxObject} />
         </a>
-        <a href="https://www.instagram.com/hyundol_97" target="_blank">
+        <a href="https://www.instagram.com/hyundol_97" target="_blank" rel="noopener noreferrer">
           <InstagramIcon sx={sxObject} />
         </a>
       </div>
