@@ -32,7 +32,7 @@ const Home = () => {
         </div>
       </div>
       <div className="home-sub">
-        <Lottie loop animationData={richIsJson} play style={{ width: '50%', height: '50%' }} />
+        <Lottie loop animationData={richIsJson} play style={{ width: '50%', height: '50%', marginBottom: '30px' }} />
         <div>
           <p className="intro-black">
             &nbsp; 세상에 부유한 사람들은 많습니다. 하지만, 여기서 의미하는 부유함은 재력에 대한 부유함을 의미합니다.

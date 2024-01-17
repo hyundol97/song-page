@@ -20,7 +20,7 @@ const Intro = () => {
   return (
     <div className="intro-wrapper">
       <div className="intro-main">
-        <Card sx={{ borderRadius: 5, boxShadow: 7 }}>
+        <Card sx={{ borderRadius: 5, boxShadow: 7, maxWidth: '300px' }}>
           <CardActionArea>
             <CardMedia component="img" image={identify} alt="green iguana" />
             <CardContent>
@@ -37,50 +37,52 @@ const Intro = () => {
             </CardContent>
           </CardActionArea>
         </Card>
-      </div>
-      <div className="intro-main">
-        <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
-          <ListItem>
-            <ListItemAvatar>
-              <Avatar>
-                <SchoolIcon />
-              </Avatar>
-            </ListItemAvatar>
-            <ListItemText primary="초등학교" secondary="용현초등학교" />
-          </ListItem>
-          <ListItem>
-            <ListItemAvatar>
-              <Avatar>
-                <SchoolIcon />
-              </Avatar>
-            </ListItemAvatar>
-            <ListItemText primary="중학교" secondary="충의중학교" />
-          </ListItem>
-          <ListItem>
-            <ListItemAvatar>
-              <Avatar>
-                <SchoolIcon />
-              </Avatar>
-            </ListItemAvatar>
-            <ListItemText primary="고등학교" secondary="부용고등학교 (인문계)" />
-          </ListItem>
-          <ListItem>
-            <ListItemAvatar>
-              <Avatar>
-                <SchoolIcon />
-              </Avatar>
-            </ListItemAvatar>
-            <ListItemText primary="대학교" secondary="세종대학교 (소프트웨어, 소셜미디어매니지먼트소프트웨어 전공)" />
-          </ListItem>
 
-          <div className="summary">
-            <h2>새로운 길에 대한 도전</h2>
-            <p>
-              &nbsp; 경기도 의정부시에서 태어나 자랐으며, 문과출신으로 교차지원을 통해 대학에 입학하였습니다. 대학에서
-              소프트웨어학, 연계전공으로 소셜미디어매니지먼트소프트웨어를 전공하여 학사 학위를 취득하였습니다. 🎓
-            </p>
-          </div>
-        </List>
+        <div>
+          <List sx={{ bgcolor: 'background.paper' }}>
+            <h2>학력사항</h2>
+            <ListItem>
+              <ListItemAvatar>
+                <Avatar>
+                  <SchoolIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary="초등학교" secondary="용현초등학교" />
+            </ListItem>
+            <ListItem>
+              <ListItemAvatar>
+                <Avatar>
+                  <SchoolIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary="중학교" secondary="충의중학교" />
+            </ListItem>
+            <ListItem>
+              <ListItemAvatar>
+                <Avatar>
+                  <SchoolIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary="고등학교" secondary="부용고등학교 (인문계)" />
+            </ListItem>
+            <ListItem>
+              <ListItemAvatar>
+                <Avatar>
+                  <SchoolIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary="대학교" secondary="세종대학교 (소프트웨어, 소셜미디어매니지먼트소프트웨어 전공)" />
+            </ListItem>
+          </List>
+        </div>
+      </div>
+
+      <div className="summary">
+        <h2>새로운 길에 대한 도전</h2>
+        <p>
+          &nbsp; 경기도 의정부시에서 태어나 자랐으며, 문과출신으로 교차지원을 통해 대학에 입학하였습니다. 대학에서
+          주전공으로 소프트웨어학, 연계전공으로 소셜미디어매니지먼트소프트웨어를 전공하여 학사 학위를 취득하였습니다. 🎓
+        </p>
       </div>
     </div>
   );

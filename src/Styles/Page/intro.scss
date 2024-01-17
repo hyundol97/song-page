@@ -1,46 +1,50 @@
 .intro-wrapper {
   margin: 2vw 0 2vw 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-
-  > * {
-    flex: 0.33;
-  }
 }
 
 .intro-main {
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin: 75px 0 150px 0;
+
+  > * {
+    flex: 0.33;
+  }
 
   div {
     display: block;
     font-size: 1.1em;
     line-height: 1.5;
   }
+  h2 {
+    padding: 0 0 10px 20px;
+  }
   p {
     margin: 0 auto; // 브라우저 원인으로 margin 값 발생하여 별도 처리
   }
 
-  .summary {
-    color: #5b686c;
-    h2 {
-      text-align: center;
-      margin: 40px 0 10px 0;
-      font-size: 2.5em;
-      font-weight: 200;
-      color: #6da2e3;
-    }
-    p {
-      font-size: 1.1em;
-      font-weight: 200;
-    }
-  }
   .MuiAvatar-root {
     display: grid;
+  }
+}
+
+.summary {
+  color: #5b686c;
+  width: 70%;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    margin: 40px 0 10px 0;
+    font-size: 2.5em;
+    font-weight: 200;
+    color: #6da2e3;
+  }
+  p {
+    font-size: 1.1em;
+    font-weight: 200;
   }
 }
 
