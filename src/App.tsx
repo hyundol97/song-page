@@ -9,7 +9,10 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Pages routes={ROUTES_ARR} />
+        <div className="body-wrapper">
+          <Pages routes={ROUTES_ARR} />
+        </div>
+
         <Footer />
       </div>
     </Router>
