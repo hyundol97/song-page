@@ -15,6 +15,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import SchoolIcon from '@mui/icons-material/School';
 import identify from 'Assets/identify.jpg';
+import example from 'Assets/background.jpg';
 
 const Intro = () => {
   return (
@@ -78,12 +79,24 @@ const Intro = () => {
       </div>
 
       <div className="summary">
-        <h2>새로운 길에 대한 도전</h2>
-        <p>
-          &nbsp; 경기도 의정부시에서 태어나 자랐으며, 문과출신으로 교차지원을 통해 대학에 입학하였습니다. 대학에서
-          주전공으로 소프트웨어학, 연계전공으로 소셜미디어매니지먼트소프트웨어를 전공하여 학사 학위를 취득하였습니다. 🎓
-        </p>
+        <div>
+          <h2>새로운 길에 대한 도전</h2>
+          <p>
+            &nbsp; 고등학생 시절 문과에 속한 학생이었고, 제 당시 장래희망은 돈을 가장 많이 벌 수 있는 직업을 갖는 것이
+            전부였습니다. 이에 상경계열 학과를 선택하여 대학을 지원하고자 했었습니다. 하지만, 이는 제가 흥미를 가질
+            요소와는 거리가 있다 생각했습니다. 결국, 성적에 맞춰 대학에 진학하기를 포기하였고 새로운 도전을 결심하였고,
+            교차지원을 통해 대학에 입학하였습니다. 대학에서 주전공으로 소프트웨어학, 연계전공으로
+            소셜미디어매니지먼트소프트웨어를 전공하여 학사 학위를 취득하였습니다. 🎓
+          </p>
+        </div>
+
+        <div className="summary-images">
+          <img src={example} alt="main" />
+          <img src={example} alt="main" />
+        </div>
       </div>
+
+      <div className="intro-sub"></div>
     </div>
   );
 };

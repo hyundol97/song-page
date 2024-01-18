@@ -46,6 +46,17 @@
     font-size: 1.1em;
     font-weight: 200;
   }
+  img {
+    max-width: 50%;
+  }
+
+  .summary-images {
+    margin-top: 30px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
 }
 
 .intro-sub {
