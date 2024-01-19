@@ -7,7 +7,7 @@
   justify-content: space-evenly;
   display: flex;
   flex-direction: row;
-  margin: 75px 0 150px 0;
+  margin: 75px 0 200px 0;
 
   > * {
     flex: 0.33;
@@ -34,10 +34,11 @@
   color: #5b686c;
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 200px;
 
   h2 {
     text-align: center;
-    margin: 40px 0 10px 0;
+    margin-bottom: 10px;
     font-size: 2.5em;
     font-weight: 200;
     color: #6da2e3;
@@ -50,6 +51,9 @@
     max-width: 50%;
   }
 
+  .summary-contents {
+    padding: 0 7vw 0 7vw;
+  }
   .summary-images {
     margin-top: 30px;
     justify-content: space-evenly;

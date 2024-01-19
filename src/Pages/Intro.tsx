@@ -79,7 +79,7 @@ const Intro = () => {
       </div>
 
       <div className="summary">
-        <div>
+        <div className="summary-contents">
           <h2>새로운 길에 대한 도전</h2>
           <p>
             &nbsp; 고등학생 시절 문과에 속한 학생이었고, 제 당시 장래희망은 돈을 가장 많이 벌 수 있는 직업을 갖는 것이
