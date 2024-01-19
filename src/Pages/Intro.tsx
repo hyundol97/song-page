@@ -96,7 +96,20 @@ const Intro = () => {
         </div>
       </div>
 
-      <div className="intro-sub"></div>
+      <div className="intro-sub">
+        <h2>나름 괜찮은 학생 이었을지도?!</h2>
+        <div className="intro-images">
+          <img src={example} alt="main" />
+          <img src={example} alt="main" />
+          <img src={example} alt="main" />
+          <img src={example} alt="main" />
+          <img src={example} alt="main" />
+          <img src={example} alt="main" />
+          <img src={example} alt="main" />
+          <img src={example} alt="main" />
+        </div>
+        <p>(위 상장들은 극히 일부에 불과합니다^^)</p>
+      </div>
     </div>
   );
 };
