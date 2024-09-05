@@ -4,15 +4,15 @@
  * @description 각 페이지의 헤더 (메뉴) 부분을 출력하는 컴포넌트
  */
 
-import { Link, useNavigate } from 'react-router-dom';
-import { ROUTES } from 'Routes/Routes';
-import homeLogo from 'Assets/home_logo.png';
+import { Link, useNavigate } from "react-router-dom";
+import { ROUTES } from "Routes/Routes";
+import homeLogo from "Assets/home_logo.png";
 
 const Header = () => {
   const navigate = useNavigate();
 
   const onClick = () => {
-    navigate('/');
+    navigate("/");
   };
 
   return (

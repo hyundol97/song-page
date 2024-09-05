@@ -1,4 +1,4 @@
-@use 'Styles/index.scss';
+@use "Styles/index.scss";
 
 a {
   color: black; /* 방문한 후에도 색상을 동일하게 유지 */
@@ -14,18 +14,19 @@ a:visited {
 }
 
 body {
-  background-image: url('./Assets/background.jpg');
+  background-image: url("./Assets/background.jpg");
   background-size: cover;
   margin: 3vw 10vw 3vw 10vw;
-  font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative; // 부모 요소가 position: relative; 설정이 필요합니다.
 }
 
 body::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -49,5 +50,6 @@ body::before {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }

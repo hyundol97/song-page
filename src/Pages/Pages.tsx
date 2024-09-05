@@ -3,8 +3,8 @@
  * @author h.s.Song
  */
 
-import { Route, Routes } from 'react-router-dom';
-import * as RoutesType from 'Types/Routes';
+import { Route, Routes } from "react-router-dom";
+import * as RoutesType from "Types/Routes";
 
 interface PageProps {
   routes: RoutesType.Route[];

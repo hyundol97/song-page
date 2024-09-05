@@ -3,7 +3,7 @@
  * @author h.s.Song
  */
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 interface TyppingEffectTextType {
   text: string;
@@ -12,7 +12,7 @@ interface TyppingEffectTextType {
 const TyppingEffectText = (props: TyppingEffectTextType) => {
   const { text } = props;
 
-  const [typpingText, setTyppingText] = useState('');
+  const [typpingText, setTyppingText] = useState("");
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const TyppingEffectText = (props: TyppingEffectTextType) => {
 
     // 10초마다 초기화 및 타이핑 효과 재시작
     const resetIntervalId = setInterval(() => {
-      setTyppingText('');
+      setTyppingText("");
       currentIndex = 0;
       setIsVisible(false);
       setTimeout(() => {
@@ -53,8 +53,11 @@ const TyppingEffectText = (props: TyppingEffectTextType) => {
   }, [text]);
 
   return (
-    <p className="intro-blue" style={{ visibility: isVisible ? 'visible' : 'hidden' }}>
-      {typpingText.length > 0 ? typpingText : '\u00A0'}
+    <p
+      className="intro-blue"
+      style={{ visibility: isVisible ? "visible" : "hidden" }}
+    >
+      {typpingText.length > 0 ? typpingText : "\u00A0"}
     </p>
   );
 };
